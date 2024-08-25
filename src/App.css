@@ -1,54 +1,77 @@
 /* Estilos para el encabezado del sitio */
 .site-header {
-  background-color: #f0f4f8; /* Azul tenue */
+  background-color: #f0f4f8;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
-  text-align: center; /* Centrar el nombre del sitio */
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
 .site-name {
   font-size: 26px;
   font-weight: bold;
   color: #333;
+  white-space: nowrap; /* Evita que el texto se desborde */
 }
 
 /* Estilos para el contenedor del dropdown */
 .dropdown-container {
-  margin: 20px auto; /* Centrar el dropdown */
+  margin: 20px auto;
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
   max-width: 600px;
   background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  width: 100%; /* Asegura que el contenedor no se desborde */
+}
+
+@media (max-width: 768px) {
+  .dropdown-container {
+    margin: 20px 15px;
+    max-width: 100%;
+    width: calc(100% - 30px); /* Ajusta el ancho para evitar desbordamiento */
+  }
 }
 
 /* Estilos para el título del dropdown */
 .dropdown-title {
   width: 100%;
   padding: 15px;
-  background-color: #dfe6ec; /* Azul tenue */
+  background-color: #dfe6ec;
   border: none;
-  text-align: center; /* Centrar el texto */
+  text-align: center;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   outline: none;
   color: #333;
-  transition: background-color 0.3s ease; /* Suavizar el cambio de color */
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
 }
 
 .dropdown-title:hover {
-  background-color: #bfcde0; /* Azul un poco más oscuro */
+  background-color: #bfcde0;
 }
 
 /* Estilos para el contenido del dropdown */
 .dropdown-content {
   padding: 20px;
-  background-color: #f7f7f7; /* Gris claro */
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .dropdown-content {
+    padding: 15px;
+  }
 }
 
 /* Estilos para cada sección dentro del dropdown */
@@ -65,14 +88,14 @@
 
 .dropdown-text {
   font-size: 15px;
-  color: #555; /* Un gris más oscuro para mejor legibilidad */
+  color: #555;
   margin: 0;
-  line-height: 1.6; /* Mejorar la legibilidad con mayor altura de línea */
+  line-height: 1.6;
 }
 
 /* Estilos adicionales para mejorar la apariencia */
 .dropdown-container:hover {
-  border-color: #bfcde0; /* Cambiar el borde al mismo color azul tenue */
+  border-color: #bfcde0;
 }
 
 .dropdown-subheading {
@@ -81,4 +104,51 @@
   color: #4a4a4a;
   margin-top: 15px;
   margin-bottom: 10px;
+}
+
+/* Estilos para el footer */
+.site-footer {
+  background-color: #f0f4f8;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* Responsiveness for smaller devices */
+@media (max-width: 480px) {
+  .site-header {
+    padding: 15px;
+  }
+
+  .site-name {
+    font-size: 22px;
+  }
+
+  .dropdown-title {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .dropdown-subtitle {
+    font-size: 16px;
+  }
+
+  .dropdown-subheading {
+    font-size: 15px;
+  }
+
+  .footer-text {
+    font-size: 13px;
+  }
 }

@@ -7,6 +7,7 @@ import FourthSection from './FourthSection';
 import FifthSection from './fifthSection';
 import SixthSection from './sixthSection';
 import SeventhSection from './seventhSection';
+import Footer from './footer.js';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
     <FifthSection />
     <SixthSection />
     <SeventhSection />
+    <Footer />
     </div>
   );
 }
