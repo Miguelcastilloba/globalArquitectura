@@ -1,61 +1,77 @@
+/* Estilos para el encabezado del sitio */
 .site-header {
-  background-color: #fff;
+  background-color: #f0f4f8; /* Azul tenue */
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
+  text-align: center; /* Centrar el nombre del sitio */
 }
 
 .site-name {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   color: #333;
 }
 
-
+/* Estilos para el contenedor del dropdown */
 .dropdown-container {
-  margin: 20px 0;
+  margin: 20px auto; /* Centrar el dropdown */
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
   overflow: hidden;
   max-width: 600px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
+/* Estilos para el título del dropdown */
 .dropdown-title {
   width: 100%;
   padding: 15px;
-  background-color: #f8f8f8;
+  background-color: #dfe6ec; /* Azul tenue */
   border: none;
-  text-align: left;
+  text-align: center; /* Centrar el texto */
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   outline: none;
+  color: #333;
+  transition: background-color 0.3s ease; /* Suavizar el cambio de color */
 }
 
 .dropdown-title:hover {
-  background-color: #eaeaea;
+  background-color: #bfcde0; /* Azul un poco más oscuro */
 }
 
+/* Estilos para el contenido del dropdown */
 .dropdown-content {
-  padding: 15px;
-  background-color: #fff;
+  padding: 20px;
+  background-color: #f7f7f7; /* Gris claro */
 }
 
+/* Estilos para cada sección dentro del dropdown */
 .dropdown-section {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .dropdown-subtitle {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: #333;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .dropdown-text {
-  font-size: 14px;
-  color: #666;
+  font-size: 15px;
+  color: #555; /* Un gris más oscuro para mejor legibilidad */
   margin: 0;
+  line-height: 1.6; /* Mejorar la legibilidad con mayor altura de línea */
 }
+
+/* Estilos adicionales para mejorar la apariencia */
+.dropdown-container:hover {
+  border-color: #bfcde0; /* Cambiar el borde al mismo color azul tenue */
+}
+
