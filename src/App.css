@@ -12,3 +12,50 @@
   font-weight: bold;
   color: #333;
 }
+
+
+.dropdown-container {
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 600px;
+}
+
+.dropdown-title {
+  width: 100%;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-title:hover {
+  background-color: #eaeaea;
+}
+
+.dropdown-content {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.dropdown-section {
+  margin-bottom: 10px;
+}
+
+.dropdown-subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.dropdown-text {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
